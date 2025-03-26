@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%@ page import="com.yong.bbs.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/myweb/css/mainLayout.css">
+<style>
+h2 {
+	text-align: center;
+}
+
+table {
+	width: 550px;
+	margin: 0px auto;
+	border-top: 3px double darkblue;
+	border-bottom: 3px double darkblue;
+}
+
+table thead th {
+	background-color: skyblue;
+}
+</style>
+</head>
+<body>
+	<%@include file="/header.jsp"%>
+	<section>
+		<article>
+			<h2>자유게시판</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>제목</th>
+						<th>글쓴이</th>
+						<th>작성날짜</th>
+						<th>조회수</th>
+					</tr>
+				</thead>
+				<tbody>
+				<%
+				
+				%>
+				
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4" align="center">페이징 들어갈 영역</td>
+						<td><a href="bbsWrite.jsp">글쓰기</a></td>
+					</tr>
+				</tfoot>
+			</table>
+		</article>
+	</section>
+	<%@include file="/footer.jsp"%>
+</body>
+</html>
